@@ -70,3 +70,9 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+
+gem 'authlogic'
+
+gem "tailwindcss-rails", "~> 2.0"
+
+gem "heroicon"

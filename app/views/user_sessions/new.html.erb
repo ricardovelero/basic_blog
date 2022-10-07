@@ -1,0 +1,22 @@
+<div class="page-header"><h1>Sign In</h1></div>
+
+<%= form_for @user_session do |f| %>
+  <%= render 'shared/errors', object: @user_session %>
+
+  <div class="mb-4">
+    <%= f.label :login %>
+    <%= f.email_field :login, class: 'block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-gray-800 border border-gray-200 rounded' %>
+  </div>
+
+  <div class="mb-4">
+    <%= f.label :password %>
+    <%= f.password_field :password, class: 'block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-gray-800 border border-gray-200 rounded' %>
+  </div>
+
+  <div class="mb-4">
+    <%= f.label :remember_me %>
+    <%= f.check_box :remember_me %>
+  </div>
+
+  <%= f.submit "Log in!", class: 'inline-block align-middle text-center select-none border font-normal whitespace-no-wrap rounded py-1 px-3 leading-normal no-underline bg-blue-600 text-white hover:bg-blue-600 py-3 px-4 leading-tight text-xl' %>
+<% end %>

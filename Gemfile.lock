@@ -68,6 +68,11 @@ GEM
       tzinfo (~> 2.0)
     addressable (2.8.1)
       public_suffix (>= 2.0.2, < 6.0)
+    authlogic (6.4.2)
+      activemodel (>= 5.2, < 7.1)
+      activerecord (>= 5.2, < 7.1)
+      activesupport (>= 5.2, < 7.1)
+      request_store (~> 1.0)
     bindex (0.8.1)
     bootsnap (1.13.0)
       msgpack (~> 1.2)
@@ -90,6 +95,8 @@ GEM
     erubi (1.11.0)
     globalid (1.0.0)
       activesupport (>= 5.0)
+    heroicon (1.0.0)
+      rails (>= 5.2)
     i18n (1.12.0)
       concurrent-ruby (~> 1.0)
     importmap-rails (1.1.5)
@@ -161,6 +168,8 @@ GEM
     regexp_parser (2.6.0)
     reline (0.3.1)
       io-console (~> 0.5)
+    request_store (1.5.1)
+      rack (>= 1.4)
     rexml (3.2.5)
     rubyzip (2.3.2)
     selenium-webdriver (4.5.0)
@@ -177,6 +186,8 @@ GEM
       sprockets (>= 3.0.0)
     sqlite3 (1.5.2-arm64-darwin)
     stimulus-rails (1.1.0)
+      railties (>= 6.0.0)
+    tailwindcss-rails (2.0.14-arm64-darwin)
       railties (>= 6.0.0)
     thor (1.2.1)
     timeout (0.3.0)
@@ -207,9 +218,11 @@ PLATFORMS
   arm64-darwin-21
 
 DEPENDENCIES
+  authlogic
   bootsnap
   capybara
   debug
+  heroicon
   importmap-rails
   jbuilder
   puma (~> 5.0)
@@ -219,6 +232,7 @@ DEPENDENCIES
   sprockets-rails
   sqlite3 (~> 1.4)
   stimulus-rails
+  tailwindcss-rails (~> 2.0)
   turbo-rails
   tzinfo-data
   web-console
